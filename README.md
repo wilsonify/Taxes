@@ -1,6 +1,4 @@
-# Taxes
-
-Tax Computation
+# Tax Computation
 
 This project provides tools for calculating taxes. It includes functions for calculating federal, state, and local taxes, as well as a class for storing and manipulating tax data.
 Requirements
@@ -13,10 +11,11 @@ To install the package, use pip:
 
 pip install tax-computation
 
-Usage
+# Usage
 
 Here is an example of how to use the package to calculate federal taxes:
 
+```
 from tax_computation import federal_tax
 
 taxable_income = 50000
@@ -25,15 +24,19 @@ filing_status = 'single'
 tax = federal_tax(taxable_income, filing_status)
 print(tax)
 
+```
+
 The package also includes a TaxData class for storing and manipulating tax data. Here is an example of how to use it:
 
+```
 from tax_computation import TaxData
 
 data = TaxData(taxable_income=50000, filing_status='single')
 data.calculate_federal_tax()
 print(data.federal_tax)
+```
 
-Contributing
+# Contributing
 
 We welcome contributions to the project. If you would like to contribute, please follow these guidelines:
 
@@ -44,6 +47,6 @@ We welcome contributions to the project. If you would like to contribute, please
     Commit your changes and push them to your fork
     Submit a pull request for your changes to be reviewed and merged
 
-License
+# License
 
 This project is licensed under the MIT License.
